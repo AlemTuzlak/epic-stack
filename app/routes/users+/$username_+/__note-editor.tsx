@@ -146,9 +146,7 @@ export function NoteEditor({ note }: { note?: Info['loaderData']['note'] }) {
 						</Button>
 					</div>
 					<ErrorList
-						errors={[
-							...(formState.errors.images?.map((e) => e?.message ?? '') ?? []),
-						]}
+						errors={formState.errors.images?.map?.((e) => e?.message ?? '')}
 					/>
 				</Form>
 				<div className={floatingToolbarClassName}>
